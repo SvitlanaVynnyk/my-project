@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is an example application of my blog post:
 
 * [Getting Started with Gradle: Our First Java Project](http://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-our-first-java-project/)
@@ -12,3 +13,6 @@ Both commands create a jar file called _first-java-project.jar_ to the _build/li
 You can run the application by running the following command at command prompt:
 
     java -jar first-java-project.jar
+=======
+# my-project
+>>>>>>> 5db49161aa10f58f89591287ad130323e0548c2f
