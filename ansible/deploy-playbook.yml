@@ -1,0 +1,19 @@
+---
+- hosts: app-server
+  tasks:
+
+    - name: Create deploy directory.
+      file:
+        path: "/home/svitlana/deploy/"
+        state: directory
+
+    - name: Uploading artifact.
+      get_url: 
+        url: http://35.187.126.187:8082/nexus/content/repositories/hello-world/somecompany/helloworld/2/helloworld-2.zip
+
+        dest: /home/svitlana/helloworld-2.jar
+
+    - name: Run java app.
+      command: cd /home/svitlana/deploy/ && java -jar helloworld-2.jar
+
+    

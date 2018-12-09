@@ -1,0 +1,5 @@
+jenkins ansible_host= ansible_user=svitlana ansible_sudo_user=svitlana
+app-server ansible_host= ansible_user=svitlana ansible_sudo_user=svitlana
+nexus ansible_host= ansible_user=svitlana ansible_sudo_user=svitlana
+
+

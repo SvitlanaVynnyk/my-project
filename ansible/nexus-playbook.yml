@@ -1,0 +1,7 @@
+---
+- hosts: nexus
+  roles:
+  - { role: ansible-nexus,
+      nexus_version: '2.10.0-02', 
+      sudo: yes,
+      nexus_installation_dir: '/opt' }

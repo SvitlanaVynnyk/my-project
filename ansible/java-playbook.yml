@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks: 
+    - name: Installing repo for Java 8
+      apt_repository: repo='ppa:openjdk-r/ppa'
+
+  roles: 
+    - role: java
+      when: "ansible_os_family =='Debian'"
+      java_packages:
+        - openjdk-8-jdk
